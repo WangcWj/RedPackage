@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:icon="@null"
+    tools:context=".SettingsActivity">
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="基础权限">
+
+        <Preference
+            android:key="pref_accessibility"
+            android:layout="@layout/preference_btn"
+            android:title="无障碍权限" />
+
+        <Preference
+            android:key="pref_keep_screen_on"
+            android:layout="@layout/preference_btn"
+            android:title="电池优化" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/watch_options">
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_watch_list"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/watch_list_hint"
+            android:title="@string/watch_list" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_exclude_exclusive"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/exclude_exclusive_hint"
+            android:title="@string/exclude_exclusive" />
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_only_last"
+            android:layout="@layout/preference_checkbox"
+            android:summary="@string/only_last_hint"
+            android:title="@string/only_last" />
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:layout="@layout/preference_category"
+        android:title="@string/anti_block_options">
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_watch_chat"
+            android:layout="@layout/preference_checkbox"
+            android:title="@string/auto_open_packets" />
+        <xyz.monkeytong.hongbao.preferences.SeekBarDialogPreference
+            android:key="pref_open_delay"
+            android:layout="@layout/preference_checkbox"
+            android:title="@string/open_with_delay" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_watch_self"
+            android:layout="@layout/preference_checkbox"
+            android:title="@string/open_self" />
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="pref_open_after_back"
+            android:layout="@layout/preference_checkbox"
+            android:title="@string/open_after_back" />
+    </PreferenceCategory>
+</PreferenceScreen>

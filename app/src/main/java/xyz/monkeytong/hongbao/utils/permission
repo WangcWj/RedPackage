@@ -1,0 +1,254 @@
+{
+	"HuaWei": {
+		"auto": {
+			"1": {
+				"pack": "com.huawei.systemmanager",
+				"class": "com.huawei.systemmanager.optimize.bootstart.BootStartActivity"
+			},
+			"2": {
+				"action": "android.intent.action.MAIN",
+				"pack": "com.huawei.systemmanager",
+				"class": "com.huawei.systemmanager.startupmgr.ui.StartupNormalAppListActivity",
+				"tag": [
+					"huawei_battery"
+				]
+			},
+			"3": {
+				"action": "android.intent.action.MAIN",
+				"pack": "com.huawei.systemmanager",
+				"class": "com.huawei.systemmanager.SystemManagerMainActivity"
+			},
+			"4": {
+				"launch": "com.huawei.systemmanager",
+				"tag": [
+					"huawei_mate7"
+				]
+			},
+			"5": {
+				"pack": "com.huawei.systemmanager",
+				"class": "com.huawei.systemmanager.appcontrol.activity.StartupAppControlActivity",
+				"tag": [
+					"huawei_battery"
+				]
+			}
+		},
+		"protect": {
+			"1": {
+				"action": "android.intent.action.MAIN",
+				"category": "android.intent.category.LAUNCHER",
+				"pack": "com.huawei.systemmanager",
+				"class": "com.huawei.systemmanager.optimize.process.ProtectActivity"
+			}
+		},
+		"overlay": {
+			"1": {
+				"launch": "com.huawei.systemmanager"
+			}
+		}
+	},
+	"Samsung": {
+		"protect": {
+			"1": {
+				"action": "com.samsung.android.sm.ACTION_BATTERY",
+				"category": "android.intent.category.LAUNCHER",
+				"pack": "com.samsung.android.lool",
+				"class": "com.samsung.android.sm.ui.battery.BatteryActivity",
+				"tag": [
+					"samsung_s8"
+				]
+			},
+			"2": {
+				"action": "com.samsung.android.sm.ACTION_BATTERY",
+				"category": "android.intent.category.LAUNCHER",
+				"pack": "com.samsung.android.sm_cn",
+				"class": "com.samsung.android.sm.ui.battery.BatteryActivity",
+				"tag": [
+					"samsung_s8"
+				]
+			},
+			"3": {
+				"action": "com.samsung.android.sm.ACTION_BATTERY",
+				"category": "android.intent.category.LAUNCHER",
+				"pack": "com.samsung.android.sm",
+				"class": "com.samsung.android.sm.ui.dashboard.SmartManagerDashBoardActivity",
+				"tag": [
+					"samsung_j5"
+				]
+			},
+			"4": {
+				"action": "com.samsung.android.sm.ACTION_BATTERY",
+				"category": "android.intent.category.LAUNCHER",
+				"pack": "com.samsung.android.sm",
+				"class": "com.samsung.android.sm.ui.battery.BatteryActivity",
+				"tag": [
+					"samsung_j5",
+					"samsung_s8"
+				]
+			},
+			"5": {
+				"action": "android.settings.APP_OPS_SETTINGS",
+				"category": "android.intent.category.DEFAULT",
+				"pack": "com.android.settings",
+				"class": "com.android.settings.Settings$AppOpsDetailsActivity"
+			}
+		}
+	},
+	"Lenovo": {
+		"auto": {
+			"1": {
+				"pack": "com.lenovo.security",
+				"class": "com.lenovo.security.purebackground.PureBackgroundActivity"
+			},
+			"2": {
+				"pack": "com.lenovo.security",
+				"class": "com.lenovo.security.homepage.HomePageActivity"
+			}
+		},
+		"protect": {
+			"1": {
+				"pack": "com.lenovo.powersetting",
+				"class": "com.lenovo.powersetting.ui.Settings$HighPowerApplicationsActivity"
+			}
+		}
+	},
+	"Meizu": {
+		"protect": {
+			"1": {
+				"action": "com.meizu.safe.security.SHOW_APPSEC",
+				"category": "android.intent.category.DEFAULT"
+			}
+		},
+		"overlay": {
+			"1": {
+				"action": "com.meizu.safe.security.SHOW_APPSEC",
+				"category": "android.intent.category.DEFAULT"
+			}
+		}
+	},
+	"Oppo": {
+		"auto": {
+			"1": {
+				"pack": "com.coloros.safecenter",
+				"class": "com.coloros.safecenter.permission.startup.StartupAppListActivity"
+			},
+			"2": {
+				"pack": "com.coloros.safecenter",
+				"class": "com.coloros.safecenter.startupapp.StartupAppListActivity"
+			},
+			"3": {
+				"comment": "3 as PhoneManager -> 2 as AutoStart",
+				"pack": "com.coloros.phonemanager",
+				"class": "com.coloros.phonemanager.FakeActivity",
+				"tag": [
+					"oppo_a11"
+				]
+			},
+			"4": {
+				"pack": "com.coloros.safecenter",
+				"class": "com.coloros.privacypermissionsentry.PermissionTopActivity",
+				"tag": [
+					"oppo_a11"
+				]
+			}
+		},
+		"protect": {
+			"1": {
+				"action": "android.settings.APPLICATION_DETAILS_SETTINGS"
+			},
+			"2": {
+				"pack": "com.coloros.safecenter",
+				"class": "com.coloros.safecenter.permission.PermissionManagerActivity"
+			},
+			"3": {
+				"comment": "1 as Detail -> 3 Background Protect",
+				"pack": "com.coloros.oppoguardelf",
+				"class": "com.coloros.powermanager.fuelgaue.PowerAppsBgSetting",
+				"tag": [
+					"oppo_a11"
+				]
+			}
+		},
+		"overlay": {
+			"1": {
+				"pack": "com.coloros.safecenter",
+				"class": "com.coloros.safecenter.permission.floatwindow.FloatWindowListActivity"
+			}
+		}
+	},
+	"Sony": {
+		"protect": {
+			"1": {
+				"action": "android.settings.IGNORE_BATTERY_OPTIMIZATION_SETTINGS",
+				"tag": [
+					"battery_sony"
+				]
+			}
+		}
+	},
+	"XiaoMi": {
+		"auto": {
+			"1": {
+				"pack": "com.miui.securitycenter",
+				"class": "com.miui.permcenter.autostart.AutoStartManagementActivity"
+			}
+		},
+		"protect": {
+			"1": {
+				"action": "miui.intent.action.HIDDEN_APPS_CONFIG_ACTIVITY",
+				"tag": [
+					"xiaomi_battery"
+				]
+			}
+		},
+		"overlay": {
+			"1": {
+				"action": "miui.intent.action.APP_PERM_EDITOR"
+			},
+			"2": {
+				"action": "android.settings.APPLICATION_DETAILS_SETTINGS"
+			},
+			"3": {
+				"pack": "com.miui.securitycenter",
+				"class": "com.miui.permcenter.permissions.RealAppPermissionsEditorActivity"
+			}
+		}
+	},
+	"ZTE": {
+		"auto": {
+			"1": {
+				"pack": "cn.nubia.security",
+				"class": "cn.nubia.security.NubiaSecurity"
+			}
+		},
+		"overlay": {
+			"1": {
+				"action": "com.zte.heartyservice.intent.action.startActivity.PERMISSION_SCANNER"
+			}
+		}
+	},
+	"Vivo": {
+		"auto": {
+			"1": {
+				"pack": "com.vivo.permissionmanager",
+				"class": "com.vivo.permissionmanager.activity.BgStartUpManagerActivity",
+				"tag": [
+					"vivo_v7"
+				]
+			}
+		},
+		"protect": {
+			"1": {
+				"pack": "com.vivo.abe",
+				"class": "com.vivo.applicationbehaviorengine.ui.ExcessivePowerManagerActivity"
+			},
+			"2": {
+				"comment": "2 as PhoneManager -> 1 as Background Protect",
+				"pack": "com.iqoo.powersaving",
+				"class": "com.iqoo.powersaving.PowerSavingManagerActivity",
+				"tag": [
+					"vivo_v7"
+				]
+			}
+		}
+	}
+}
