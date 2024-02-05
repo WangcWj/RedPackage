@@ -24,7 +24,6 @@ import xyz.monkeytong.hongbao.utils.PowerUtil;
 
 public class HongbaoService extends AccessibilityService implements SharedPreferences.OnSharedPreferenceChangeListener {
     private static final String TAG = "HongbaoService";
-
     private static final String WECHAT_DETAILS_CH = "红包详情";
     private static final String WECHAT_DETAILS_2_CH = "红包记录";
     private static final String WECHAT_OPENED = "存入零钱";
